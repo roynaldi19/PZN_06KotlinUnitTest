@@ -35,7 +35,10 @@ dependencies {
 
 //menggunakan junit
 tasks.named<Test>("test"){
-    useJUnitPlatform()
+    useJUnitPlatform{
+        //mengecualikan test
+        excludeTags("integration-test")
+    }
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).all {
