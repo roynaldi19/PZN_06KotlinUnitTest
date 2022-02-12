@@ -31,6 +31,8 @@ dependencies {
     implementation("com.google.guava:guava:30.1.1-jre")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
+
+    testImplementation("org.mockito:mockito-junit-jupiter:3.5.13")
 }
 
 //menggunakan junit
