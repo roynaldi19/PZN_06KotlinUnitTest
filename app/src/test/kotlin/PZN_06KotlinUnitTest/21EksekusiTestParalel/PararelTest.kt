@@ -7,7 +7,7 @@ import org.junit.jupiter.api.parallel.ExecutionMode
 import java.util.concurrent.TimeUnit
 
 @Execution(ExecutionMode.CONCURRENT)
-class SlowTest () {
+class PararelTest () {
 
     @Test
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
