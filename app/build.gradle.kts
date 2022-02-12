@@ -33,6 +33,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
 }
 
+//menggunakan junit
 tasks.named<Test>("test"){
     useJUnitPlatform()
 }
