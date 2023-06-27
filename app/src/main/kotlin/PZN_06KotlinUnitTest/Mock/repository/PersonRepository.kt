@@ -1,6 +1,6 @@
-package PZN_06KotlinUnitTest.repository
+package PZN_06KotlinUnitTest.Mock.repository
 
-import PZN_06KotlinUnitTest.model.Person
+import PZN_06KotlinUnitTest.Mock.model.Person
 
 interface PersonRepository {
 

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 import java.util.*
 
 
-class RandomCalculatorTest : ParentCalculatorTest() {
+class PewarisanCalculatorTest : ParentCalculatorTest() {
 
     @Test
     fun testRandom(random: Random) {

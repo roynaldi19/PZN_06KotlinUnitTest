@@ -21,18 +21,5 @@ class CalculatorTest {
         assertEquals(20, result, "Hasilnya harusnya 20")
     }
 
-    @Test
-    fun testDivideSuccess() {
-        val result = calculator.divide(100, 10)
-        assertEquals(10, result)
-    }
-
-    @Test
-    fun testDivideFailed() {
-        assertThrows<IllegalArgumentException> {
-            //pangging function yang menyebabkan exception
-            calculator.divide(100,0)
-        }
-    }
 
 }

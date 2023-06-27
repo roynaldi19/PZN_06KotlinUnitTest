@@ -11,20 +11,6 @@ class CalculatorTest {
 
     private val calculator = Calculator()
 
-    companion object {
-        @BeforeAll
-        @JvmStatic
-        fun beforeAll(){
-            println("Sebelum semua unit test")
-        }
-
-        @AfterAll
-        @JvmStatic
-        fun afterAll(){
-            println("Setelah semua unit test")
-        }
-    }
-
     @Test
     @DisplayName("Test for Function Add")
     fun testAddSuccess() {
@@ -32,40 +18,10 @@ class CalculatorTest {
         assertEquals(20, result, "Hasilnya harusnya 20")
     }
 
-    @Disabled("Sementara test ini di nonaktifkan untuk perbaikan")
-    @Test
-    fun testAddSuccess2() {
-        val result = calculator.add(10, 20)
-        assertEquals(20, result, "Hasilnya harusnya 20")
-    }
-
-    @Test
-    fun testDivideSuccess() {
-        val result = calculator.divide(100, 10)
-        assertEquals(10, result)
-    }
-
-    @Test
-    fun testDivideFailed() {
-        assertThrows<IllegalArgumentException> {
-            //pangging function yang menyebabkan exception
-            calculator.divide(100,0)
-        }
-    }
-
-    @Test
-    fun testAborted() {
-        val profile = System.getenv()["PROFILE"]
-        if ("DEV" != profile) {
-            throw TestAbortedException()
-        }
-        println("Test Not Aborted because Dev Profile")
-    }
 
     @Test
     fun testAssumption() {
         assumeTrue("DEV" == System.getenv()["PROFILE"])
-
         println("Test Not Aborted because Dev Profile")
 
     }

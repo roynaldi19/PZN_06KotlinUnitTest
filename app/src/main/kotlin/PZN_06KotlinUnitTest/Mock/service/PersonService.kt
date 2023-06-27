@@ -1,7 +1,7 @@
-package PZN_06KotlinUnitTest.service
+package PZN_06KotlinUnitTest.Mock.service
 
-import PZN_06KotlinUnitTest.model.Person
-import PZN_06KotlinUnitTest.repository.PersonRepository
+import PZN_06KotlinUnitTest.Mock.model.Person
+import PZN_06KotlinUnitTest.Mock.repository.PersonRepository
 import java.util.*
 
 class PersonService(private val personRepository: PersonRepository) {

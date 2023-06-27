@@ -3,7 +3,7 @@ package PZN_06KotlinUnitTest.`15InformasiTest`
 import org.junit.jupiter.api.*
 
 @DisplayName("Test whit Test Info")
-class InfrormationTest {
+class InformationTest {
 
     @Test
     @Tags(value = [

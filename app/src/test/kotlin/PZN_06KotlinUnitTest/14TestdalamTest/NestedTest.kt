@@ -14,7 +14,6 @@ class NestedTest {
     @Nested
     inner class MyNestedTest {
 
-
         @Test
         fun test1(){
 

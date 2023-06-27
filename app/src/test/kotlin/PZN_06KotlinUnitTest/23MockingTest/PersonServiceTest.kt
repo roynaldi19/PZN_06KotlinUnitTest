@@ -1,8 +1,8 @@
 package PZN_06KotlinUnitTest.`23MockingTest`
 
-import PZN_06KotlinUnitTest.model.Person
-import PZN_06KotlinUnitTest.repository.PersonRepository
-import PZN_06KotlinUnitTest.service.PersonService
+import PZN_06KotlinUnitTest.Mock.model.Person
+import PZN_06KotlinUnitTest.Mock.repository.PersonRepository
+import PZN_06KotlinUnitTest.Mock.service.PersonService
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach

@@ -6,14 +6,14 @@ import org.junit.jupiter.api.condition.*
 class ConditionalTest {
 
     @Test
-    @EnabledOnOs(value = [OS.LINUX, OS.MAC])
-    fun enableOnLinuxOrMac(){
+    @EnabledOnOs(value = [OS.WINDOWS])
+    fun enableOnWindows(){
 
     }
 
     @Test
-    @DisabledOnOs(value = [OS.WINDOWS])
-    fun disableOnWindows(){
+    @DisabledOnOs(value = [OS.LINUX, OS.MAC])
+    fun disableOnLinuxOrMac(){
 
     }
 

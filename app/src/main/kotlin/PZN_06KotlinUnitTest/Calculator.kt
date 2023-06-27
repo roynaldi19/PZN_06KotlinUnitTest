@@ -12,6 +12,5 @@ class Calculator {
         } else {
             return first / second
         }
-
     }
 }

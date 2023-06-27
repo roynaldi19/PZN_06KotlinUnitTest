@@ -8,12 +8,8 @@ import org.junit.jupiter.api.Test
 class SampleIntegrationTest {
 
     @Test
-    fun testSample1(){
+    fun testSample1() {
 
     }
 
-    @Test
-    fun testSample2(){
-
-    }
 }

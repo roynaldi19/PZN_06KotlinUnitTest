@@ -13,10 +13,4 @@ class CalculatorTest {
 
     }
 
-    @Test
-    fun testAddSuccess2() {
-        val result = calculator.add(10, 20)
-
-    }
-
 }

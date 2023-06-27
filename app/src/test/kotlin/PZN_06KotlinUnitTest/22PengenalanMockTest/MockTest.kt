@@ -8,7 +8,6 @@ class MockTest {
 
     @Test
     fun testMock() {
-
         val list: List<String> = Mockito.mock(List::class.java) as List<String>
 
         Mockito.`when`(list[0]).thenReturn("Roy")
@@ -19,5 +18,8 @@ class MockTest {
 
         Mockito.verify(list)[0]
         Mockito.verify(list)[1]
+
+        println(list[0])
+        println(list[1])
     }
 }
